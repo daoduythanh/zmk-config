@@ -9,7 +9,7 @@
     )
 
     ZMK_MACRO(js_str,
-      bindings = <&kp DOLLAR &kp LEFT_PRACE>;
+      bindings = <&kp DOLLAR &kp LEFT_BRACE>;
     )
 
     ZMK_MACRO(js_eq,
