@@ -91,7 +91,7 @@
 &none     &kp Q        &kp W        &kp F         &kp P          &kp B                                      &kp J            &kp L          &kp U         &kp Y        &kp SQT      &kp MINUS
 &kp ESC   &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHIFT T  &kp G                                      &kp M            &hmr RSHIFT N  &hmr RCTRL E  &hmr RALT I  &hmr RGUI O  &kp SEMI
 &kp TAB   &kp Z        &kp X        &kp C         &lt SYMBOLS D  &kp V             &kp C_MUTE    &none      &kp K            &lt SYMBOLS H  &kp COMMA     &kp DOT      &kp FSLH     &kp N1
-                       &none        &none         &kp BSPC       &lt NAVLEFT SPACE &mo NUMBERS   &mo MOUSE  &lt NAVRIGHT RET &kp DEL        &none         &none
+                       &none        &none         &kp BSPC       &lt NAVLEFT SPACE &mo NUMBERS   &mo MOUSE  &lt NAVRIGHT RET &kp DEL        &none         &sl SYSTEM
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -209,18 +209,17 @@
         system_layer {
             display-name = "System";
 
-            // TODO:
 // ------------------------------------------------------------------------------------------------------------
-// |       |        |        |        |         |        |                   |          |         |        |       |       |       |
-// |       |        |        |        |         |        |                   |          |  End    |  Up    | Home  | PgUp  |       |
-// |       |  GUI   |  ALT   |  CTRL  |  SHIFT  |        |                   | CapsWord |  Right  |  Down  | Left  |  PgDn |       |
-// |       |        |        |        |         |        |        |  |       |          |  Paste  |  Copy  |  Cut  | Undo  |       |
-//                  |        |        |         |        |        |  |       |          |         |        |       |
+// |       |       |        |       |        |       |                   |        |        |        |       |       |  SN VO  |
+// |       | QWERTY|        |       |        |       |                   |        |        |        |       |       |         |
+// |       |       | RGB TOG|       |        |       |                   |        |        |        |       |       |         |
+// |       |       |        |       |        |       |        |  |       |        |        |        |       |       |         |
+//                 |        |       |        |       |        |  |       |        |        |        |       |
             bindings = <
-&trans    &trans      &trans      &trans      &trans        &trans                            &trans        &trans     &trans      &trans      &trans      &none
-&trans    &trans      &trans      &trans      &trans        &trans                            &kp INS       &kp HOME   &kp UP      &kp END     &kp PG_UP   &trans
-&trans    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHIFT    &trans                            &caps_word    &kp LEFT   &kp DOWN    &kp RIGHT   &kp PG_DN   &trans
-&trans    &trans      &trans      &trans      &trans        &trans      &trans    &trans      &kp LS(LC(Z)) &kp LC(V)  &kp LC(C)   &kp LC(X)   &kp LC(Z)   &trans
+&trans    &trans      &trans      &trans      &trans        &trans                            &trans        &trans     &trans      &trans      &trans      &sn_vo
+&trans    &to QWERTY  &trans      &trans      &trans        &trans                            &trans        &trans     &trans      &trans      &trans      &trans
+&trans    &trans      &rgb_ug RGB_TOG      &trans      &trans        &trans                            &trans        &trans     &trans      &trans      &trans      &trans
+&trans    &trans      &trans      &trans      &trans        &trans      &trans    &trans      &trans        &trans     &trans      &trans      &trans      &trans
                       &trans      &trans      &trans        &trans      &trans    &trans      &trans        &trans     &trans      &trans
             >;
         };
