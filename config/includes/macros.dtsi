@@ -2,46 +2,46 @@
   macros {
     ZMK_MACRO(fat_arrow,
       bindings = <&kp EQUAL &kp GT>;
-    );
+    )
 
     ZMK_MACRO(thin_arrow,
       bindings = <&kp MINUS &kp GT>;
-    );
+    )
 
     ZMK_MACRO(js_str,
       bindings = <&kp DOLLAR &kp LEFT_PRACE>;
-    );
+    )
 
     ZMK_MACRO(js_eq,
       bindings = <&kp EQUAL &kp EQUAL &kp EQUAL>;
-    );
+    )
     
     ZMK_MACRO(js_ne,
       bindings = <&kp EXCLAMATION &kp EQUAL &kp EQUAL>;
-    );
+    )
 
     ZMK_MACRO(js_gte,
       bindings = <&kp GT &kp EQUAL>;
-    );
+    )
 
     ZMK_MACRO(js_lte,
       bindings = <&kp LT &kp EQUAL>;
-    );
+    )
 
     ZMK_MACRO(js_or_null,
       bindings = <&kp SPACE &kp QUESTION &kp QUESTION &kp SPACE>;
-    );
+    )
 
     ZMK_MACRO(js_and,
       bindings = <&kp SPACE &kp AMPERSAND &kp AMPERSAND &kp SPACE>;
-    );
+    )
 
     ZMK_MACRO(js_or,
       bindings = <&kp SPACE &kp PIPE &kp PIPE &kp SPACE>;
-    );
+    )
 
     ZMK_MACRO(sn_vo,
       bindings = <&kp N0 &kp N5 &kp N0 &kp N9>;
-    );
+    )
   };
 };
