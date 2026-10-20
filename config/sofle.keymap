@@ -208,6 +208,21 @@
 
         system_layer {
             display-name = "System";
+
+            // TODO:
+// ------------------------------------------------------------------------------------------------------------
+// |       |        |        |        |         |        |                   |          |         |        |       |       |       |
+// |       |        |        |        |         |        |                   |          |  End    |  Up    | Home  | PgUp  |       |
+// |       |  GUI   |  ALT   |  CTRL  |  SHIFT  |        |                   | CapsWord |  Right  |  Down  | Left  |  PgDn |       |
+// |       |        |        |        |         |        |        |  |       |          |  Paste  |  Copy  |  Cut  | Undo  |       |
+//                  |        |        |         |        |        |  |       |          |         |        |       |
+            bindings = <
+&trans    &trans      &trans      &trans      &trans        &trans                            &trans        &trans     &trans      &trans      &trans      &none
+&trans    &trans      &trans      &trans      &trans        &trans                            &kp INS       &kp HOME   &kp UP      &kp END     &kp PG_UP   &trans
+&trans    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHIFT    &trans                            &caps_word    &kp LEFT   &kp DOWN    &kp RIGHT   &kp PG_DN   &trans
+&trans    &trans      &trans      &trans      &trans        &trans      &trans    &trans      &kp LS(LC(Z)) &kp LC(V)  &kp LC(C)   &kp LC(X)   &kp LC(Z)   &trans
+                      &trans      &trans      &trans        &trans      &trans    &trans      &trans        &trans     &trans      &trans
+            >;
         };
 
         qwerty_layer {
