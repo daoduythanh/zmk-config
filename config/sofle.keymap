@@ -22,6 +22,7 @@
 #define QWERTY 8
 
 #include "includes/keys.h"
+#include "includes/macros.dtsi"
 
 / {
     behaviors {
@@ -190,19 +191,18 @@
         dev_layer {
             display-name = "Dev";
 
-            // TODO:
 // ------------------------------------------------------------------------------------------------------------
-// |       |        |        |        |         |        |                   |          |         |        |       |       |       |
-// |       |        |        |        |         |        |                   |          |  End    |  Up    | Home  | PgUp  |       |
-// |       |  GUI   |  ALT   |  CTRL  |  SHIFT  |        |                   | CapsWord |  Right  |  Down  | Left  |  PgDn |       |
-// |       |        |        |        |         |        |        |  |       |          |  Paste  |  Copy  |  Cut  | Undo  |       |
-//                  |        |        |         |        |        |  |       |          |         |        |       |
+// |       |        |        |        |         |        |                   |         |        |        |        |      |       |
+// |       |        |        |        |         |        |                   |         |  =>    |  ${    | ->     |      |       |
+// |       |  GUI   |  ALT   |  CTRL  |  SHIFT  |        |                   |   !==   |  ===   |  >=    | <=     |      |       |
+// |       |        |        |        |         |        |        |  |       |         |   ??   |   &&   |   ||   |      |       |
+//                  |        |        |         |        |        |  |       |         |        |        |        |
             bindings = <
-&trans    &trans      &trans      &trans      &trans        &trans                            &trans        &trans     &trans      &trans      &trans      &none
-&trans    &trans      &trans      &trans      &trans        &trans                            &kp INS       &kp HOME   &kp UP      &kp END     &kp PG_UP   &trans
-&trans    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHIFT    &trans                            &caps_word    &kp LEFT   &kp DOWN    &kp RIGHT   &kp PG_DN   &trans
-&trans    &trans      &trans      &trans      &trans        &trans      &trans    &trans      &kp LS(LC(Z)) &kp LC(V)  &kp LC(C)   &kp LC(X)   &kp LC(Z)   &trans
-                      &trans      &trans      &trans        &trans      &trans    &trans      &trans        &trans     &trans      &trans
+&trans    &trans      &trans      &trans      &trans        &trans                            &trans     &trans       &trans     &trans       &trans      &none
+&trans    &trans      &trans      &trans      &trans        &trans                            &trans     &fat_arrow   &js_str    &thin_arrow  &trans      &trans
+&trans    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHIFT    &trans                            &js_ne     &js_eq       &js_gt     &js_lt       &trans      &trans
+&trans    &trans      &trans      &trans      &trans        &trans      &trans    &trans      &trans     &js_or_null  &js_and    &js_or       &trans      &trans
+                      &trans      &trans      &trans        &trans      &trans    &trans      &trans     &trans       &trans     &trans
             >;
         };
 
