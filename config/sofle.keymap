@@ -200,7 +200,7 @@
             bindings = <
 &trans    &trans      &trans      &trans      &trans        &trans                            &trans     &trans       &trans     &trans       &trans      &none
 &trans    &trans      &trans      &trans      &trans        &trans                            &trans     &fat_arrow   &js_str    &thin_arrow  &trans      &trans
-&trans    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHIFT    &trans                            &js_ne     &js_eq       &js_gt     &js_lt       &trans      &trans
+&trans    &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHIFT    &trans                            &js_ne     &js_eq       &js_gte    &js_lte      &trans      &trans
 &trans    &trans      &trans      &trans      &trans        &trans      &trans    &trans      &trans     &js_or_null  &js_and    &js_or       &trans      &trans
                       &trans      &trans      &trans        &trans      &trans    &trans      &trans     &trans       &trans     &trans
             >;
