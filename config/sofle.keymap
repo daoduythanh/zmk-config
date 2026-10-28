@@ -174,11 +174,11 @@
             display-name = "Mouse";
 
 // ------------------------------------------------------------------------------------------------------------
-// |       |       |       |        |        |      |                   |      |       |       |      |       |       |
-// |       |  1    |  2    |  3     |  4     |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
-// |   =   |  GUI  |  ALT  |  CTRL  |  SHIFT |      |                   |  *   |  4    |  5    |  6   |   +   |   =   |
-// |       |       |       |        |        |      |        |  |       |  /   |  1    |  2    |  3   |   -   |   ,   |
-//                 |       |        |  BKSPC | SPACE|  Base  |  |   .   |  0   |  DEL  |       |      |
+// |       |       |       |       |       |       |                   |       |       |       |       |       |       |
+// |       |       |       |       |       |       |                   |  MB4  | MCLK  | MV UP | RCLK  |       |       |
+// | TO BAS|  GUI  |  ALT  | CTRL  | SHIFT |       |                   |  MB5  | MV LFT| MV DWN| MV RGT| LCLK  |       |
+// |       |       |       |       |       |       |        |  |       |       | SCR L | SCR D | SCR R |       |       |
+//                 |       |       |       | SPACE | TO BAS |  | LCLK  | RCLK  |       | SCR U |       |
             bindings = <
 &none     &trans    &trans    &trans      &trans      &trans                          &trans     &trans          &trans          &trans           &trans     &trans
 &none     &none     &none     &none       &none       &none                           &mkp MB4   &mkp MCLK       &mmv MOVE_UP    &mkp RCLK        &none      &none 
