@@ -90,7 +90,7 @@
 &none     &kp N1       &kp N2       &kp N3        &kp N4         &kp N5                                              &kp N6           &kp N7         &kp N8        &kp N9       &kp N0       &none
 &none     &kp Q        &kp W        &kp F         &kp P          &kp B                                               &kp J            &kp L          &kp U         &kp Y        &kp SQT      &kp MINUS
 &kp ESC   &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHIFT T  &kp G                                               &kp M            &hmr RSHIFT N  &hmr RCTRL E  &hmr RALT I  &hmr RGUI O  &kp SEMI
-&kp TAB   &kp Z        &kp X        &kp C         &lt SYMBOLS D  &kp V             &kp C_MUTE         &none          &kp K            &lt SYMBOLS H  &kp COMMA     &kp DOT      &kp FSLH     &kp N1
+&kp TAB   &kp Z        &kp X        &kp C         &lt SYMBOLS D  &kp V             &kp C_MUTE         &none          &kp K            &lt SYMBOLS H  &kp COMMA     &kp DOT      &kp FSLH     &kp UNDER
                        &none        &none         &mo DEV        &lt NAVLEFT SPACE &lt NUMBERS BSPC   &lt MOUSE DEL  &lt NAVRIGHT RET &mo DEV        &none         &sl SYSTEM
             >;
 
