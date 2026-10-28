@@ -85,13 +85,13 @@
 // |       |  Q  |  W  |  F   |  P   |  B   |                   |  J   |  L    |  U    |  Y   |   '   |   -   |
 // |  ESC  |  A  |  R  |  S   |  T   |  G   |                   |  M   |  N    |  E    |  I   |   O   |   ;   |
 // |  TAB  |  Z  |  X  |  C   |  D   |  V   |  MUTE  |  |       |  K   |  H    |  ,    |  .   |   /   |   _   |
-//               |     |      | BSPC | SPACE|  ENTER |  | SPACE | ENTER| DEL   |       |      |
+//               |     |      |      | SPACE|  BSPC  |  | DEL   | ENTER|       |       |      |
             bindings = <
-&none     &kp N1       &kp N2       &kp N3        &kp N4         &kp N5                                     &kp N6           &kp N7         &kp N8        &kp N9       &kp N0       &none
-&none     &kp Q        &kp W        &kp F         &kp P          &kp B                                      &kp J            &kp L          &kp U         &kp Y        &kp SQT      &kp MINUS
-&kp ESC   &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHIFT T  &kp G                                      &kp M            &hmr RSHIFT N  &hmr RCTRL E  &hmr RALT I  &hmr RGUI O  &kp SEMI
-&kp TAB   &kp Z        &kp X        &kp C         &lt SYMBOLS D  &kp V             &kp C_MUTE    &none      &kp K            &lt SYMBOLS H  &kp COMMA     &kp DOT      &kp FSLH     &kp N1
-                       &none        &none         &lt DEV BSPC   &lt NAVLEFT SPACE &mo NUMBERS   &mo MOUSE  &lt NAVRIGHT RET &lt DEV DEL    &none         &sl SYSTEM
+&none     &kp N1       &kp N2       &kp N3        &kp N4         &kp N5                                              &kp N6           &kp N7         &kp N8        &kp N9       &kp N0       &none
+&none     &kp Q        &kp W        &kp F         &kp P          &kp B                                               &kp J            &kp L          &kp U         &kp Y        &kp SQT      &kp MINUS
+&kp ESC   &hml LGUI A  &hml LALT R  &hml LCTRL S  &hml LSHIFT T  &kp G                                               &kp M            &hmr RSHIFT N  &hmr RCTRL E  &hmr RALT I  &hmr RGUI O  &kp SEMI
+&kp TAB   &kp Z        &kp X        &kp C         &lt SYMBOLS D  &kp V             &kp C_MUTE         &none          &kp K            &lt SYMBOLS H  &kp COMMA     &kp DOT      &kp FSLH     &kp N1
+                       &none        &none         &mo DEV        &lt NAVLEFT SPACE &lt NUMBERS BSPC   &lt MOUSE DEL  &lt NAVRIGHT RET &mo DEV        &none         &sl SYSTEM
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -237,8 +237,8 @@
 &none      &kp N1    &kp N2    &kp N3      &kp N4      &kp N5                              &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &none
 &kp TAB    &kp Q     &kp W     &kp E       &kp R       &kp T                               &kp Y       &kp U       &kp I       &kp O       &kp P       &trans
 &kp ESC    &kp A     &kp S     &kp D       &kp F       &kp G                               &kp H       &kp J       &kp K       &kp L       &kp SEMI    &trans
-&kp LCTRL  &kp Z     &kp X     &kp C       &kp V       &kp B      &kp C_MUTE    &none      &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &trans
-                     &kp LALT  &kp LSHIFT  &kp BSPC    &kp SPACE  &kp RET       &to BASE   &kp RET     &kp DEL     &none       &none
+&kp LCTRL  &kp Z     &kp X     &kp C       &kp V       &kp B      &kp C_MUTE    &to BASE   &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &trans
+                     &kp LALT  &kp LSHIFT  &kp BSPC    &kp SPACE  &kp RET       &none      &kp RET     &kp DEL     &none       &none
             >;
         };
     };
