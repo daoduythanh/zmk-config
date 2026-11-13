@@ -1,0 +1,39 @@
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_qwerty {
+            timeout-ms = <100>;
+            key-positions = <RT3 LT4>;
+            layers = <BASE>;
+            bindings = <&to QWERTY>;
+        };
+
+        combo_lpar {
+            timeout-ms = <50>;
+            key-positions = <LT3 LT2 LT1>;
+            layers = <BASE>;
+            bindings = <&kp LPAR>;
+        };
+
+        combo_rpar {
+            timeout-ms = <50>;
+            key-positions = <RT3 RT2 RT1>;
+            layers = <BASE>;
+            bindings = <&kp RPAR>;
+        };
+
+        combo_lbrc {
+            timeout-ms = <50>;
+            key-positions = <LT3 LT2 LM1>;
+            layers = <BASE>;
+            bindings = <&kp LBRC>;
+        };
+
+        combo_rbrc {
+            timeout-ms = <50>;
+            key-positions = <RT3 RT2 RM1>;
+            layers = <BASE>;
+            bindings = <&kp RBRC>;
+        };
+    };
+};

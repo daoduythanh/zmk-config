@@ -63,17 +63,10 @@
   quick-tap-ms = <165>;
 };
 
-/ {
+// Must be sourced after HRM-combo
+#include "includes/combos.dtsi"
 
-    combos {
-        compatible = "zmk,combos";
-        combo_qwerty {
-            timeout-ms = <100>;
-            key-positions = <RT3 LT4>;
-            layers = <BASE>;
-            bindings = <&to QWERTY>;
-        };
-    };
+/ {
 
     keymap {
         compatible = "zmk,keymap";
