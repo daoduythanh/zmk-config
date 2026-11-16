@@ -3,7 +3,7 @@
         compatible = "zmk,combos";
         combo_qwerty {
             timeout-ms = <100>;
-            key-positions = <RT3 LT4>;
+            key-positions = <RT4 LT4>;
             layers = <BASE>;
             bindings = <&to QWERTY>;
         };
@@ -12,28 +12,63 @@
             timeout-ms = <50>;
             key-positions = <LT3 LT2 LT1>;
             layers = <BASE>;
-            bindings = <&kp LPAR>;
+            bindings = <&kp LPAR>; // (
         };
 
         combo_rpar {
             timeout-ms = <50>;
             key-positions = <RT3 RT2 RT1>;
             layers = <BASE>;
-            bindings = <&kp RPAR>;
+            bindings = <&kp RPAR>; // )
         };
 
         combo_lbrc {
             timeout-ms = <50>;
             key-positions = <LT3 LT2 LM1>;
             layers = <BASE>;
-            bindings = <&kp LBRC>;
+            bindings = <&kp LBRC>; // {
         };
 
         combo_rbrc {
             timeout-ms = <50>;
             key-positions = <RT3 RT2 RM1>;
             layers = <BASE>;
-            bindings = <&kp RBRC>;
+            bindings = <&kp RBRC>; // }
         };
+
+        combo_lbkt {
+            timeout-ms = <50>;
+            key-positions = <LT2 LT1>;
+            layers = <BASE>;
+            bindings = <&kp LBKT>; // [
+        };
+
+        combo_rbkt {
+            timeout-ms = <50>;
+            key-positions = <RT2 RT1>;
+            layers = <BASE>;
+            bindings = <&kp RBKT>; // ]
+        };
+
+        combo_lt {
+            timeout-ms = <50>;
+            key-positions = <LM3 LT2 LM1>;
+            layers = <BASE>;
+            bindings = <&kp LT>; // <
+        };
+
+        combo_gt {
+            timeout-ms = <50>;
+            key-positions = <RM3 RT2 RM1>;
+            layers = <BASE>;
+            bindings = <&kp GT>; // >
+        };
+
+        combo_equal {
+            timeout-ms = <50>;
+            key-positions = <RT3 RT2>;
+            layers = <BASE>;
+            bindings = <&kp EQUAL>; // =
+        }
     };
 };
