@@ -69,6 +69,6 @@
             key-positions = <RT3 RT2>;
             layers = <BASE>;
             bindings = <&kp EQUAL>; // =
-        }
+        };
     };
 };
